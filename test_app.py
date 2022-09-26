@@ -16,7 +16,7 @@ class TestMyApp(unittest.TestCase):
         rv = self.app.get('/')
         assert rv.status == '200 OK'
         assert b'Congratulations' in rv.data
-        print("successfully build is completed")
+        print("The build is completed successfully")
         #assert False
 
     def test_404(self):
